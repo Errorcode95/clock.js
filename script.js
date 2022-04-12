@@ -1,12 +1,12 @@
 function startTime() {
-    const today = new Date();
-    let year = today.getFullYear();
-    let month = today.getMonth()+1;
-    let date = today.getDate();
-    let hour = today.getHours();
-    let minute = today.getMinutes();
-    let second = today.getSeconds();
-    let millisecond = today.getMilliseconds();
+    const rtc = new Date();
+    let year = rtc.getFullYear();
+    let month = rtc.getMonth()+1;
+    let date = rtc.getDate();
+    let hour = rtc.getHours();
+    let minute = rtc.getMinutes();
+    let second = rtc.getSeconds();
+    let millisecond = rtc.getMilliseconds();
     minute = checkTime(minute);
     second = checkTime(second);
     document.getElementById('txt').innerHTML =  date + "/" + month + "/" + year + " - " + hour + ":" + minute + ":" + second + ":" + millisecond;
