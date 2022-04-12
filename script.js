@@ -9,7 +9,7 @@ function startTime() {
     let millisecond = now.getMilliseconds();
     minute = checkTime(minute);
     second = checkTime(second);
-    document.getElementById('txt').innerHTML =  date + "/" + month + "/" + year + " - " + hour + ":" + minute + ":" + second;
+    document.getElementById('txt').innerHTML =  date + "/" + month + "/" + year + " - " + hour + ":" + minute + ":" + second + ":" + millisecond;
     setTimeout(startTime, 1000);
   }
   
