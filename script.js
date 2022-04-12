@@ -10,7 +10,7 @@ function startTime() {
     minute = checkTime(minute);
     second = checkTime(second);
     document.getElementById('txt').innerHTML =  date + "/" + month + "/" + year + " - " + hour + ":" + minute + ":" + second + ":" + millisecond;
-    setTimeout(startTime, 1000);
+    setTimeout(startTime, 1);
   }
   
   function checkTime(i) {
