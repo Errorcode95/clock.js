@@ -17,16 +17,16 @@ function startTime() {
   let dateUTC = rtc.getUTCDate();
   let hourUTC = rtc.getUTCHours();
   let minuteUTC = rtc.getUTCMinutes();
-  let secondUTC = rtc.getUTCSeconds();
 
   minute = checkTime00(minute);
   second = checkTime00(second);
+  minuteUTC = checkTime00(minuteUTC);
   millisecond = checkTime000(millisecond);
 
   document.getElementById('clockLocal').innerHTML =  
   date + "/" + month + "/" + year + " - " + hour + ":" + minute + ":" + second + ":" + millisecond + " GMT" + offset;
   document.getElementById('clockUTC').innerHTML =  
-  dateUTC + "/" + monthUTC + "/" + yearUTC + " - " + hourUTC + ":" + minuteUTC + ":" + secondUTC + ":" + millisecond + " UTC";
+  dateUTC + "/" + monthUTC + "/" + yearUTC + " - " + hourUTC + ":" + minuteUTC + ":" + second + ":" + millisecond + " UTC";
   setTimeout(startTime, 1);
 }
 
