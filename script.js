@@ -18,9 +18,13 @@ function startTime() {
   let hourUTC = rtc.getUTCHours();
   let minuteUTC = rtc.getUTCMinutes();
 
-  hour = checkTime00(hour)
+  month = checkTime00(month);
+  date = checkTime00(date);
+  hour = checkTime00(hour);
   minute = checkTime00(minute);
   second = checkTime00(second);
+  monthUTC = checkTime00(monthUTC);
+  dateUTC = checkTime00(dateUTC);
   hourUTC = checkTime00(hourUTC)
   minuteUTC = checkTime00(minuteUTC);
   millisecond = checkTime000(millisecond);
