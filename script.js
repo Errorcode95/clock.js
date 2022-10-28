@@ -30,9 +30,9 @@ function startTime() {
   millisecond = checkTime000(millisecond);
 
   document.getElementById('clockLocal').innerHTML =  
-  date + "/" + month + "/" + year + " - " + hour + ":" + minute + ":" + second + ":" + millisecond + " UTC" + offset;
+  year + "-" + month + "-" + date + "T" + hour + ":" + minute + ":" + second + ":" + millisecond + " UTC" + offset;
   document.getElementById('clockUTC').innerHTML =  
-  dateUTC + "/" + monthUTC + "/" + yearUTC + " - " + hourUTC + ":" + minuteUTC + ":" + second + ":" + millisecond + " UTC";
+  yearUTC + "-" + monthUTC + "-" + dateUTC + "T" + hourUTC + ":" + minuteUTC + ":" + second + ":" + millisecond + " UTC";
   setTimeout(startTime, 1);
 }
 
